@@ -11,4 +11,11 @@ class User < ApplicationRecord
     def default_values
         self.ImageUploads = 0 if self.ImageUploads.nil?
     end  
+
+     # Returns the hash digest of the given string.
+  def User.digest(string)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+  end
 end
