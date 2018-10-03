@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2018_10_03_185300) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "password_digest"
-    t.integer "ImageUploads"
+    t.integer "ImageUploads", null: false, default: 0
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
