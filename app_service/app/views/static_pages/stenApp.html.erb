@@ -104,133 +104,136 @@
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
     <h1>PNG/Crypt</h1>
-
-    <div class="sk-folding-cube" style="position: absolute; left: 50%; margin-left: -120px">
-      <div class="sk-cube1 sk-cube"></div>
-      <div class="sk-cube2 sk-cube"></div>
-      <div class="sk-cube4 sk-cube"></div>
-      <div class="sk-cube3 sk-cube"></div>
-    </div>
-
-    <form id="test-form">
-      <label>Image:</label>
-      <input type="file" name="pic" accept="image/*" onchange="clicked()">
-      <br>
-      <br>
-      <label>Message:</label>
-      <input type="text" name="message">
-      <br>
-      <br>
-
-      <div style="display: inline-block; width:100px">
-        <input type="radio" id="encrypt" name="type" value="encrypt" checked />
-        <label for="encrypt">Encrypt</label>
+    <% if logged_in? %>
+      <div class="sk-folding-cube" style="position: absolute; left: 50%; margin-left: -120px">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
       </div>
 
-      <div style="display: inline-block; width:100px">
-        <input type="radio" id="decrypt" name="type" value="decrypt" />
-        <label for="decrypt">Decrypt</label>
-      </div>
+      <form id="test-form">
+        <label>Image:</label>
+        <input type="file" name="pic" accept="image/*" onchange="clicked()">
+        <br>
+        <br>
+        <label>Message:</label>
+        <input type="text" name="message">
+        <br>
+        <br>
+
+        <div style="display: inline-block; width:100px">
+          <input type="radio" id="encrypt" name="type" value="encrypt" checked />
+          <label for="encrypt">Encrypt</label>
+        </div>
+
+        <div style="display: inline-block; width:100px">
+          <input type="radio" id="decrypt" name="type" value="decrypt" />
+          <label for="decrypt">Decrypt</label>
+        </div>
+
+        <br>
+        <br>
+        <div class="crypt-button" onClick="go()">GO!</div>
+        <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+      </form>
 
       <br>
       <br>
-      <div class="crypt-button" onClick="go()">GO!</div>
-      <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-    </form>
+      <br>
 
-    <br>
-    <br>
-    <br>
+      <script>
+        $('.sk-folding-cube').hide();
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
 
-    <script>
-      $('.sk-folding-cube').hide();
-      var a = document.createElement("a");
-      document.body.appendChild(a);
-      a.style = "display: none";
+        var secretMessage = document.createElement("p");
+        document.body.appendChild(secretMessage);
 
-      var secretMessage = document.createElement("p");
-      document.body.appendChild(secretMessage);
+        var formData = new FormData(document.getElementById('test-form'));
 
-      var formData = new FormData(document.getElementById('test-form'));
+        function go(){
+          $('.sk-folding-cube').show();
+          var msg = $( 'input[name="message"]' ).val();
+          var type = $('input[name="type"]:checked').val();
+          var url = getCryptUrl(type);
 
-      function go(){
-        $('.sk-folding-cube').show();
-        var msg = $( 'input[name="message"]' ).val();
-        var type = $('input[name="type"]:checked').val();
-        var url = getCryptUrl(type);
-
-        var data = {
-          imgB64: formData.get("imgData"),
-          type: type,
-          msg: msg
-        }
-
-        $.ajax({
-          type: "POST", 
-          url: url, 
-          data: data,
-          success: function(data){
-            $('.sk-folding-cube').hide();
-            if(type === "encrypt" && data.poop){
-              var data = `data:image/png;base64,${data.poop}`;
-              base64ToDownload(data);
-            }
-            else if(type === "decrypt" && data.decryptedMessage){
-              console.log("decryptedMessage=>",data.decryptedMessage);
-              secretMessage.innerHTML = data.decryptedMessage;
-            }
+          var data = {
+            imgB64: formData.get("imgData"),
+            type: type,
+            msg: msg
           }
-        });
-      }
 
-      function getCryptUrl(type){
-        var AUTH_TOKEN = $('meta[name=csrf-token]').attr('content');
-        if(type === "encrypt"){
-          return "/crypt/encrypt?&authenticity_token=" + AUTH_TOKEN;
+          $.ajax({
+            type: "POST", 
+            url: url, 
+            data: data,
+            success: function(data){
+              $('.sk-folding-cube').hide();
+              if(type === "encrypt" && data.poop){
+                var data = `data:image/png;base64,${data.poop}`;
+                base64ToDownload(data);
+              }
+              else if(type === "decrypt" && data.decryptedMessage){
+                console.log("decryptedMessage=>",data.decryptedMessage);
+                secretMessage.innerHTML = data.decryptedMessage;
+              }
+            }
+          });
         }
-        else if(type === "decrypt"){
-          return "/crypt/decrypt?&authenticity_token=" + AUTH_TOKEN;
-        }
-        return;
-      }
 
-      function base64ToDownload(data){
-        fetch(data)
-        .then(res => res.blob())
-        .then(blob => {
-          url = window.URL.createObjectURL(blob);
-          a.href = url;
-          a.download = "imgagine.png";
-          a.click();
-          window.URL.revokeObjectURL(url);
-        });
-      }
-
-      function clicked(){
-        var file = document.querySelector('form input[type="file"]').files[0];
-        if(!file) return
-        getBase64(file).then(
-          data => {
-            console.log("data=>",data);
-            formData.append("imgData",data);
+        function getCryptUrl(type){
+          var AUTH_TOKEN = $('meta[name=csrf-token]').attr('content');
+          if(type === "encrypt"){
+            return "/crypt/encrypt?&authenticity_token=" + AUTH_TOKEN;
           }
-        );
-      }
+          else if(type === "decrypt"){
+            return "/crypt/decrypt?&authenticity_token=" + AUTH_TOKEN;
+          }
+          return;
+        }
 
-      function getBase64(file) {
-        return new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.readAsDataURL(file);
-          reader.onload = () => resolve(reader.result);
-          reader.onerror = error => reject(error);
-        });
-      }
-    </script>
+        function base64ToDownload(data){
+          fetch(data)
+          .then(res => res.blob())
+          .then(blob => {
+            url = window.URL.createObjectURL(blob);
+            a.href = url;
+            a.download = "imgagine.png";
+            a.click();
+            window.URL.revokeObjectURL(url);
+          });
+        }
+
+        function clicked(){
+          var file = document.querySelector('form input[type="file"]').files[0];
+          if(!file) return
+          getBase64(file).then(
+            data => {
+              console.log("data=>",data);
+              formData.append("imgData",data);
+            }
+          );
+        }
+
+        function getBase64(file) {
+          return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = error => reject(error);
+          });
+        }
+      </script>
 
 
 
-    <%= form_tag do %>
-      
+      <%= form_tag do %>
+        
+      <% end %>
+    <% else %>
+      <h2> You must be logged in to use this service!</h2>  
     <% end %>
   </div>
 </div>
