@@ -1,0 +1,3 @@
+app_service/tmp/*
+app_service/tmp/cache/*
+app_service/tmp/cache/
