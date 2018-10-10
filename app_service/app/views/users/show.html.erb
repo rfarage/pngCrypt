@@ -2,12 +2,13 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-      <p>Date joined: <%= @user.created_at %><br>Images uploaded: <%= @user.ImageUploads %></p>
-
+      <div class="userContainer">
+        <h1>
+          <%= gravatar_for @user %>
+          <%= @user.name %>
+        </h1>
+        <p>Date joined: <%= @user.created_at %><br>Images uploaded: <%= @user.ImageUploads %></p>
+      </div>
     </section>
   </aside>
 </div>
