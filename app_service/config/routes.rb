@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   post    '/login',     to: 'sessions#create'
   delete  '/logout',    to: 'sessions#destroy'
   resources :users
+
+  # Api
+  post 'crypt/encrypt', to: 'crypt#encrypt'
+  post 'crypt/decrypt', to: 'crypt#decrypt'
 end
