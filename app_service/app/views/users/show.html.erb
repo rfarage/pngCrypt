@@ -7,7 +7,8 @@
           <%= gravatar_for @user %>
           <%= @user.name %>
         </h1>
-        <p>Date joined: <%= @user.created_at %><br>Images uploaded: <%= @user.ImageUploads %></p>
+        <p>Date joined: <%= @user.created_at.strftime("%B %d, %Y") %><br>
+        Images uploaded: <%= @user.ImageUploads %></p>
       </div>
     </section>
   </aside>
