@@ -12,7 +12,6 @@ app.use(bodyParser.json({limit: '50mb', extended: true}))
 
 //PING 
 app.get('/ping', function (req, res) {
-  console.log("GET-PING HEY Bitch!");
   res.send('pong')
 })
 
