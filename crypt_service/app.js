@@ -10,7 +10,6 @@ app.use(bodyParser.urlencoded({limit: '50mb', extended: true}))
 // parse application/json
 app.use(bodyParser.json({limit: '50mb', extended: true}))
 
-//PING 
 app.get('/ping', function (req, res) {
   res.send('pong')
 })
