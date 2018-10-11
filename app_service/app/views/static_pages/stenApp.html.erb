@@ -88,6 +88,15 @@
       }
     }
 
+    .mesageSection {
+      background: #DCDCDC;
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
+      min-height: 40px;
+      padding: 10px;
+    }
+
     .crypt-button{
       text-align:center;
       width:150px;
@@ -97,7 +106,7 @@
       cursor:pointer;
     }
 
-    .crypt-button:hover{
+    .crypt-button: hover{
       background-color: #008284;
     }
 
@@ -127,7 +136,7 @@
   <div class="col-md-6 col-md-offset-3">
     <h1>PNG/Crypt</h1>
     <% if logged_in? %>
-      <div class="sk-folding-cube" style="position: absolute; left: 50%; margin-left: -120px">
+      <div class="sk-folding-cube" style="position: absolute; left: 50%; margin-left: -60px">
         <div class="sk-cube1 sk-cube"></div>
         <div class="sk-cube2 sk-cube"></div>
         <div class="sk-cube4 sk-cube"></div>
@@ -151,19 +160,21 @@
 
           <label>Image:</label>
           <input type="file" name="pic" accept="image/*" onchange="clicked()">
-          
-          <br>
-          <br>
 
           <div class="fade-element-in" ng-if="d.type === 'encrypt'">
             <label>Message:</label>
             <input type="text" name="message">
           </div>
 
-          <br>
-          <br>
+          <div class="fade-element-in" ng-if="data.decryptedMessage">
+            <strong>Private Message</strong>
+            <div class="mesageSection" ng-bind="data.decryptedMessage">
+            </div>
+            <br>
+          </div>
 
-          <div class="crypt-button" onClick="go()">GO!</div>
+
+          <div class="crypt-button" ng-click="crypt()">GO!</div>
           <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
         </form>
       </div>
@@ -178,36 +189,6 @@
         document.body.appendChild(secretMessage);
 
         var formData = new FormData(document.getElementById('test-form'));
-
-        function go(){
-          $('.sk-folding-cube').show();
-          var msg = $( 'input[name="message"]' ).val();
-          var type = $('input[name="type"]:checked').val();
-          var url = getCryptUrl(type);
-
-          var data = {
-            imgB64: formData.get("imgData"),
-            type: type,
-            msg: msg
-          }
-
-          $.ajax({
-            type: "POST", 
-            url: url, 
-            data: data,
-            success: function(data){
-              $('.sk-folding-cube').hide();
-              if(type === "encrypt" && data.poop){
-                var data = `data:image/png;base64,${data.poop}`;
-                base64ToDownload(data);
-              }
-              else if(type === "decrypt" && data.decryptedMessage){
-                console.log("decryptedMessage=>",data.decryptedMessage);
-                secretMessage.innerHTML = data.decryptedMessage;
-              }
-            }
-          });
-        }
 
         function getCryptUrl(type){
           var AUTH_TOKEN = $('meta[name=csrf-token]').attr('content');
@@ -255,16 +236,39 @@
 
       <script>
         var app = angular.module('myApp', ['ngAnimate']);
-        app.controller('myCtrl', function($scope) {
-            $scope.d = {};
+        app.controller('myCtrl', function($scope,$http) {
+          var that = $scope;
+          $scope.d = {};
+          $scope.data = {};
+
+          $scope.crypt = function(){
+            $('.sk-folding-cube').show();
+            var msg = $( 'input[name="message"]' ).val();
+            var type = $('input[name="type"]:checked').val();
+            var url = getCryptUrl(type);
+
+            var data = {
+              imgB64: formData.get("imgData"),
+              type: type,
+              msg: msg
+            }
+
+            $http.post(url, data)
+            .then(function(response){
+              $('.sk-folding-cube').hide();
+              if(type === "encrypt" && response.data.poop){
+                var data = `data:image/png;base64,${response.data.poop}`;
+                base64ToDownload(data);
+              }
+              else if(type === "decrypt" && response.data.decryptedMessage){
+                that.data.decryptedMessage = response.data.decryptedMessage;
+              }
+            });
+          }
         });
       </script>
 
-
-
-
-      <%= form_tag do %>
-        
+      <%= form_tag do %>        
       <% end %>
     <% else %>
       <h2> You must be logged in to use this service!</h2>  
