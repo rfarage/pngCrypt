@@ -100,6 +100,28 @@
     .crypt-button:hover{
       background-color: #008284;
     }
+
+
+    .fade-element-in.ng-enter {
+      transition: 0.3s linear all;
+      opacity: 0;
+    }
+
+    .fade-element-in-init .fade-element-in.ng-enter {
+      opacity: 1;
+    }
+
+    .fade-element-in.ng-enter.ng-enter-active {
+      opacity: 1;
+    }
+
+    .fade-element-in.ng-leave {
+      transition: 0.3s linear all;
+      opacity: 1;
+    }
+    .fade-element-in.ng-leave.ng-leave-active {
+      opacity: 0;
+    }
 </style>
 <div class="row">
   <div class="col-md-6 col-md-offset-3">
@@ -112,35 +134,39 @@
         <div class="sk-cube3 sk-cube"></div>
       </div>
 
-      <form id="test-form">
-        <label>Image:</label>
-        <input type="file" name="pic" accept="image/*" onchange="clicked()">
-        <br>
-        <br>
-        <label>Message:</label>
-        <input type="text" name="message">
-        <br>
-        <br>
+      <div ng-app="myApp" ng-controller="myCtrl">
+        <form id="test-form">
+          <div style="display: inline-block; width:100px">
+            <input type="radio" ng-model="d.type" id="encrypt" name="type" value="encrypt" checked />
+            <label for="encrypt">Encrypt</label>
+          </div>
 
-        <div style="display: inline-block; width:100px">
-          <input type="radio" id="encrypt" name="type" value="encrypt" checked />
-          <label for="encrypt">Encrypt</label>
-        </div>
+          <div style="display: inline-block; width:100px">
+            <input type="radio" ng-model="d.type" id="decrypt" name="type" value="decrypt" />
+            <label for="decrypt">Decrypt</label>
+          </div>
 
-        <div style="display: inline-block; width:100px">
-          <input type="radio" id="decrypt" name="type" value="decrypt" />
-          <label for="decrypt">Decrypt</label>
-        </div>
+          <br>
+          <br>
 
-        <br>
-        <br>
-        <div class="crypt-button" onClick="go()">GO!</div>
-        <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-      </form>
+          <label>Image:</label>
+          <input type="file" name="pic" accept="image/*" onchange="clicked()">
+          
+          <br>
+          <br>
 
-      <br>
-      <br>
-      <br>
+          <div class="fade-element-in" ng-if="d.type === 'encrypt'">
+            <label>Message:</label>
+            <input type="text" name="message">
+          </div>
+
+          <br>
+          <br>
+
+          <div class="crypt-button" onClick="go()">GO!</div>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+        </form>
+      </div>
 
       <script>
         $('.sk-folding-cube').hide();
@@ -226,6 +252,14 @@
           });
         }
       </script>
+
+      <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+        app.controller('myCtrl', function($scope) {
+            $scope.d = {};
+        });
+      </script>
+
 
 
 

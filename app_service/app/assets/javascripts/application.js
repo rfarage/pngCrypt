@@ -15,4 +15,6 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require angularjs-min
+//= require angular-animate
 //= require_tree .
