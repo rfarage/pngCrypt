@@ -7,9 +7,10 @@ ruby '2.4.4'
 gem 'rails', '~> 5.2.1'
 
 gem 'jquery-rails'
-gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass'
 gem 'bcrypt'
-
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
 
 
 
@@ -53,6 +54,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 3.3.0'
+  gem 'faker'
 end
 
 group :test do

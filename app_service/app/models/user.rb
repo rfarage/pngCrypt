@@ -1,20 +1,22 @@
 class User < ApplicationRecord
     attr_accessor :remember_token
+    
     before_save { self.email = email.downcase}
     before_save :default_values 
+    
     validates :name, presence: true, length: { maximum: 50 }
     VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     validates :email, presence: true, length: { maximum: 255 },
                       format: { with: VALID_EMAIL_REGEX },
                       uniqueness: { case_sensitive: false }
     has_secure_password
-    validates :password, presence: true, length: { minimum: 6 }
+    validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
     
     #ensure our values are set to default
     def default_values
         #ensure that ImageUploads is never null and at least 0
         self.ImageUploads = 0 if self.ImageUploads.nil?
-        if self.ImageUploads <= 0
+        if self.ImageUploads < 0
             self.ImageUploads = 0        
         end
     end  
