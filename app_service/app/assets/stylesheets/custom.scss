@@ -204,12 +204,13 @@ aside {
   margin: 0;
   padding: 0;
   border: solid lightblue 1px;
-  column-count: 3;
+  column-count: 3; //update users_controller index :per_page to be divisble by this number
   
   li {
-    overflow: auto;
+    overflow: hidden;
     padding: 10px;
-    border: 1px solid $gray-lighter;
+    border: 1px solid lightblue;
+    border-bottom: 0;
   }
 
   li:hover{

@@ -46,12 +46,35 @@ class UsersController < ApplicationController
   end
   
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted"
+    @user = User.find(params[:id])
+    flash[:success] = @user.name+" deleted"
+    @user.destroy
     redirect_to users_url
   end
 
+  def reset
+    @user = User.find(params[:id])
+    @user.ImageUploads = 0
+    @user.save
+    flash[:success] = @user.name+" reset"
+    redirect_to users_url
+  end
 
+  def promote
+    @user = User.find(params[:id])
+    @user.admin = true
+    @user.save
+    flash[:success] = @user.name+" now has admin access"
+    redirect_to users_url
+  end
+
+  def demote
+    @user = User.find(params[:id])
+    @user.admin = false
+    @user.save
+    flash[:success] = @user.name+" is no longer has admin access"
+    redirect_to users_url
+  end
 
   private
 

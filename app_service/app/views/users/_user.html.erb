@@ -1,8 +1,17 @@
 <li>
     <%= gravatar_for user, size: 50 %>
-    <%= link_to user.name, user %>
-    <% if current_user.admin? && !current_user?(user) %>
-        | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to delete this user?" } %>
+    <%= link_to user.name, user %><br>
+    <% if current_user.admin?%>
+        <% if !current_user?(user) %>
+        | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+        | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+        | <%= link_to "promote", user, method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+        | <%= link_to "demote", user, method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+        |
+        <% else %>
+        | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to reset this user?" } %>
+        |
+        <% end %>
     <% end %>
     <p>Date joined: <%= user.created_at.strftime("%B %d, %Y") %><br>
     Images uploaded: <%= user.ImageUploads %></p>
