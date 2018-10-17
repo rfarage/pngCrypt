@@ -15,6 +15,7 @@ app.get('/ping', function (req, res) {
 })
 
 app.post('/ping', function (req, res) {
+  console.log("\x1b[34m", "encypting");
   var base64Data = req.body.imageData.replace(/^data:image\/png;base64,/, "");
   var original = new Buffer(base64Data, 'base64');
   var message = req.body.message;
@@ -39,6 +40,7 @@ app.post('/encryption', function(req,res){
 
 
 app.post('/decrypt', function(req,res){
+  console.log("\x1b[32m", "decypting");
   var base64Data = req.body.imageData.replace(/^data:image\/png;base64,/, "");
   var original = new Buffer(base64Data, 'base64');
   var buffer = steggy.reveal()(original);

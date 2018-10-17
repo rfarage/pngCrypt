@@ -207,7 +207,7 @@
           .then(blob => {
             url = window.URL.createObjectURL(blob);
             a.href = url;
-            a.download = "imgagine.png";
+            a.download = "encrypted.png";
             a.click();
             window.URL.revokeObjectURL(url);
           });
