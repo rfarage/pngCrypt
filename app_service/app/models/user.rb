@@ -14,7 +14,7 @@ class User < ApplicationRecord
     
     #ensure our values are set to default
     def default_values
-        #ensure that ImageUploads is never null and at least 0
+        #ensure that ImageUploads is never nil and at least 0
         self.ImageUploads = 0 if self.ImageUploads.nil?
         if self.ImageUploads < 0
             self.ImageUploads = 0        

@@ -202,14 +202,27 @@ aside {
 .users {
   list-style: none;
   margin: 0;
+  padding: 0;
+  border: solid lightblue 1px;
+  column-count: 3;
+  
   li {
     overflow: auto;
-    padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    padding: 10px;
+    border: 1px solid $gray-lighter;
+  }
+
+  li:hover{
+    background-color:lightblue;
   }
 }
 
 //the header navbar
-.navbar{
+#navbar{
   background-color: black;
+}
+
+//customize the page bar on the user index
+.userPageBar{
+  text-align: center;
 }

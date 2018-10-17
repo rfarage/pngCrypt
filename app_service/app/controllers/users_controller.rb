@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+    #3 columns currently, so make per_page % 3 == 0
+    #ordered by image uploads
+    @users = User.paginate(page: params[:page], :per_page => 24).order("ImageUploads DESC")
   end
 
   def show
@@ -49,6 +51,8 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+
+
   private
 
     def user_params
@@ -75,6 +79,4 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
-
-    
 end
