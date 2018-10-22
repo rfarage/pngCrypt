@@ -1,5 +1,13 @@
 <% provide(:title, "Help") %>
 <h1>Help</h1>
 <p>
-  Tutorial on application use coming soon...
+  <h3>Getting Started</h3>
+  <ol>
+    <li><%= link_to "Create an account", signup_path%>  so that you can access the application</li>
+    <li>Then access the stegonography app <%= link_to  "here", stenApp_path %></li>
+    <li>Select the PNG image you want to use in the application</li>
+    <li>Select the encrypt option to hide a message in an uploaded image, or select the decrypt option to look for a message in the given image</li>
+    <li>If you are choosing to encrypt, be sure to also provide the message to encrypt in the message field</li>
+    <li>Once all fields are filled in, press the go button to run the application</li>
+  </ol>
 </p>

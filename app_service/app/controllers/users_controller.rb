@@ -11,11 +11,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
-    if params[:promote]
-      :promote
-    elsif params[:demote]
-      :demote
-    end
   end
   
   def new
@@ -92,7 +87,7 @@ class UsersController < ApplicationController
     def logged_in_user
       unless logged_in?
         store_location
-        flash[:danger] = "Please log in."
+        flash[:danger] = "You must be logged in to use this feature. Please login or make an account."
         redirect_to login_url
       end
     end
