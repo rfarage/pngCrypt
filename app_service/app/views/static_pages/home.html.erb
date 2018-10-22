@@ -1,6 +1,6 @@
 <!-- Jumbotron content at top of home page-->
 <% if logged_in? %>
-<h1> SHOW THE APPLICATION INSTEAD OF ADVERTISING LOGIN?</h1>
+  <%= render 'app' %>
 <% else %>
 <div class="center jumbotron">
   <h1>This is pngCrypt</h1>
@@ -9,8 +9,8 @@
     pngCrypt is a stegnography web application. Upload your images to either encrypt or decrypt hidden messages!
   </h2>
 
-<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
-<%= link_to "Upload now!", stenApp_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+  <%= link_to "Upload now!", stenApp_path, class: "btn btn-lg btn-primary" %>
 </div>
 <% end %>
 <!-- rest of the body below here -->

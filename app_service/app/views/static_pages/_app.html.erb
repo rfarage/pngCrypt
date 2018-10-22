@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+      <h1>PNG/Crypt</h1>
+      <div class="sk-folding-cube" style="position: absolute; left: 50%; margin-left: -60px">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+
+      <div ng-app="myApp" ng-controller="myCtrl">
+        <form id="test-form">
+          <div style="display: inline-block; width:100px">
+            <input type="radio" ng-model="d.type" id="encrypt" name="type" value="encrypt" checked />
+            <label for="encrypt">Encrypt</label>
+          </div>
+
+          <div style="display: inline-block; width:100px">
+            <input type="radio" ng-model="d.type" id="decrypt" name="type" value="decrypt" />
+            <label for="decrypt">Decrypt</label>
+          </div>
+
+          <br>
+          <br>
+
+          <label>Image:</label>
+          <input type="file" name="pic" accept="image/*" onchange="clicked()">
+
+          <div class="fade-element-in" ng-if="d.type === 'encrypt'">
+            <label>Message:</label>
+            <input type="text" name="message">
+          </div>
+
+          <div class="fade-element-in" ng-if="data.decryptedMessage">
+            <strong>Private Message</strong>
+            <div class="mesageSection" ng-bind="data.decryptedMessage">
+            </div>
+            <br>
+          </div>
+
+
+          <div class="crypt-button" ng-click="crypt()">GO!</div>
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+        </form>
+      </div>
+
+      <script>
+        $('.sk-folding-cube').hide();
+        var a = document.createElement("a");
+        document.body.appendChild(a);
+        a.style = "display: none";
+
+        var secretMessage = document.createElement("p");
+        document.body.appendChild(secretMessage);
+
+        var formData = new FormData(document.getElementById('test-form'));
+
+        function getCryptUrl(type){
+          var AUTH_TOKEN = $('meta[name=csrf-token]').attr('content');
+          if(type === "encrypt"){
+            return "/crypt/encrypt?&authenticity_token=" + AUTH_TOKEN;
+          }
+          else if(type === "decrypt"){
+            return "/crypt/decrypt?&authenticity_token=" + AUTH_TOKEN;
+          }
+          return;
+        }
+
+        function base64ToDownload(data){
+          fetch(data)
+          .then(res => res.blob())
+          .then(blob => {
+            url = window.URL.createObjectURL(blob);
+            a.href = url;
+            a.download = "encrypted.png";
+            a.click();
+            window.URL.revokeObjectURL(url);
+          });
+        }
+
+        function clicked(){
+          var file = document.querySelector('form input[type="file"]').files[0];
+          if(!file) return
+          getBase64(file).then(
+            data => {
+              console.log("data=>",data);
+              formData.append("imgData",data);
+            }
+          );
+        }
+
+        function getBase64(file) {
+          return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = error => reject(error);
+          });
+        }
+      </script>
+
+      <script>
+        var app = angular.module('myApp', ['ngAnimate']);
+        app.controller('myCtrl', function($scope,$http) {
+          var that = $scope;
+          $scope.d = {};
+          $scope.data = {};
+
+          $scope.crypt = function(){
+            $('.sk-folding-cube').show();
+            var msg = $( 'input[name="message"]' ).val();
+            var type = $('input[name="type"]:checked').val();
+            var url = getCryptUrl(type);
+
+            var data = {
+              imgB64: formData.get("imgData"),
+              type: type,
+              msg: msg
+            }
+
+            $http.post(url, data)
+            .then(function(response){
+              $('.sk-folding-cube').hide();
+              if(type === "encrypt" && response.data.poop){
+                var data = `data:image/png;base64,${response.data.poop}`;
+                base64ToDownload(data);
+              }
+              else if(type === "decrypt" && response.data.decryptedMessage){
+                that.data.decryptedMessage = response.data.decryptedMessage;
+              }
+            });
+          }
+        });
+      </script>
+
+      <%= form_tag do %>        
+      <% end %>
+    </div>
+</div>
