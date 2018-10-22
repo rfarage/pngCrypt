@@ -16375,3 +16375,2122 @@ Processing by UsersController#index as HTML
 Completed 200 OK in 260ms (Views: 237.5ms | ActiveRecord: 2.0ms)
 
 
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:28:47 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (50.9ms)
+Completed 500 Internal Server Error in 174ms (ActiveRecord: 3.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/users/_user.html.erb:23: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_136477860'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:29:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.0ms)
+  Rendered users/index.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_rails_default.html.erb (182.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 415ms (Views: 388.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/182" for 127.0.0.1 at 2018-10-21 19:29:35 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users/182"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:34:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (43.1ms)
+  Rendered users/index.html.erb within layouts/application (68.0ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users", :delete=>true}, missing required keys: [:id]):
+    3:     <%= link_to user.name, user %><br>
+    4:     <% if current_user.admin?%>
+    5:         <% if !current_user?(user) %>
+    6:         | <%= link_to "delete", user_path(delete: true), method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+    7:         | <%= link_to "reset", user_path(reset: true), method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+    8:             <% if !user.admin? %>
+    9:             | <%= link_to "promote", user_path(promote: true), method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+  
+app/views/users/_user.html.erb:6:in `_app_views_users__user_html_erb__936702239_122333160'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_122563200'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:34:32 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.9ms)
+  Rendered users/index.html.erb within layouts/application (41.9ms)
+  Rendered layouts/_rails_default.html.erb (88.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 277ms (Views: 252.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/182" for 127.0.0.1 at 2018-10-21 19:34:38 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"o/LfGTBwWY/7hZrE7zZBlGmO5i8Jd000LL7KMYOen8M5DuVlBoEKNlTd6fmPgySxy3nMPOFyNX57ueDjRauSuA==", "id"=>"182"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 182], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-181@example.com"], ["id", 182], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Update (24.5ms)[0m  [1m[33mUPDATE "users" SET "ImageUploads" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["ImageUploads", 0], ["updated_at", "2018-10-21 23:34:38.499183"], ["id", 182]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (12.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+Redirected to http://localhost:3000/users
+Completed 302 Found in 58ms (ActiveRecord: 36.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:34:38 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (114.6ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 295ms (Views: 271.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:34:43 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [6 times] (4.0ms)
+  Rendered users/index.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_rails_default.html.erb (80.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 247ms (Views: 225.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=8" for 127.0.0.1 at 2018-10-21 19:34:52 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"8"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 168]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.2ms)
+  Rendered users/index.html.erb within layouts/application (36.6ms)
+  Rendered layouts/_rails_default.html.erb (80.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 257ms (Views: 235.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:34:57 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [6 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (31.9ms)
+  Rendered layouts/_rails_default.html.erb (90.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 255ms (Views: 234.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=7" for 127.0.0.1 at 2018-10-21 19:35:05 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"7"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 144]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.1ms)
+  Rendered users/index.html.erb within layouts/application (37.5ms)
+  Rendered layouts/_rails_default.html.erb (77.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 252ms (Views: 229.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:35:09 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (37.5ms)
+  Rendered layouts/_rails_default.html.erb (81.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 255ms (Views: 234.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/116" for 127.0.0.1 at 2018-10-21 19:35:16 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"M8UFTBDLcqv6hImI5VQq7Be4khvDd4dWSaKLW4YbjjKpOT8wJjohElXc+rWF4U/JtU+4CCty/xwepaGJQC6DSQ==", "id"=>"116"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-115@example.com"], ["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Update (24.6ms)[0m  [1m[33mUPDATE "users" SET "ImageUploads" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["ImageUploads", 0], ["updated_at", "2018-10-21 23:35:16.473869"], ["id", 116]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (13.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+Redirected to http://localhost:3000/users
+Completed 302 Found in 55ms (ActiveRecord: 39.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:35:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (81.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 256ms (Views: 236.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:35:19 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [6 times] (3.9ms)
+  Rendered users/index.html.erb within layouts/application (29.0ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 248ms (Views: 227.3ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/116" for 127.0.0.1 at 2018-10-21 19:35:25 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dddrLVOYuGBjkiiBUpkRIWeu4csK6sZaaU0jkh7Si8/vK1FRZWnr2czKW7wyLHQExVnL2OLvvhA+SglA2OeGtA==", "id"=>"116"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 116], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:60
+  [1m[36mUser Destroy (15.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 116]]
+  ↳ app/controllers/users_controller.rb:60
+  [1m[35m (22.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:60
+Redirected to http://localhost:3000/users
+Completed 302 Found in 55ms (ActiveRecord: 38.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:35:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_rails_default.html.erb (105.3ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 282ms (Views: 259.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:35:28 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [5 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_rails_default.html.erb (77.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 265ms (Views: 219.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:35:37 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.8ms)
+  Rendered users/index.html.erb within layouts/application (36.8ms)
+  Rendered layouts/_rails_default.html.erb (84.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 257ms (Views: 237.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/179" for 127.0.0.1 at 2018-10-21 19:35:41 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"d6PKIj8+/fjem5gJRQlGqwEoaXYoYdOROuqF+dRA6+vtX/BeCc+uQXHD6zQlvCOOo99DZcBkq9tt7a8rEnXmkA==", "id"=>"179"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 179], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-178@example.com"], ["id", 179], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Update (25.0ms)[0m  [1m[33mUPDATE "users" SET "ImageUploads" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["ImageUploads", 0], ["updated_at", "2018-10-21 23:35:41.501989"], ["id", 179]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (11.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+Redirected to http://localhost:3000/users
+Completed 302 Found in 55ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:35:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (38.0ms)
+  Rendered layouts/_rails_default.html.erb (82.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 259ms (Views: 238.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:35:43 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [5 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (27.9ms)
+  Rendered layouts/_rails_default.html.erb (76.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 251ms (Views: 230.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:35:46 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.7ms)
+  Rendered users/index.html.erb within layouts/application (38.7ms)
+  Rendered layouts/_rails_default.html.erb (84.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 254ms (Views: 233.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:48:41 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (43.9ms)
+  Rendered layouts/_rails_default.html.erb (91.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 329ms (Views: 270.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 19:48:46 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:22:in `show'
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:49:07 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.0ms)
+  Rendered users/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_rails_default.html.erb (89.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 276ms (Views: 254.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:50:55 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.4ms)
+  Rendered users/index.html.erb within layouts/application (40.5ms)
+  Rendered layouts/_rails_default.html.erb (95.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 289ms (Views: 255.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 19:51:01 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:22:in `show'
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:51:08 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.4ms)
+  Rendered users/index.html.erb within layouts/application (40.0ms)
+  Rendered layouts/_rails_default.html.erb (81.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 262ms (Views: 240.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:51:29 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_rails_default.html.erb (90.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 277ms (Views: 246.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 19:51:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Completed 404 Not Found in 5ms (ActiveRecord: 1.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:22:in `show'
+Started GET "/users?page=9" for 127.0.0.1 at 2018-10-21 19:51:43 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 192]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [5 times] (3.0ms)
+  Rendered users/index.html.erb within layouts/application (29.1ms)
+  Rendered layouts/_rails_default.html.erb (84.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 254ms (Views: 233.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?page=1" for 127.0.0.1 at 2018-10-21 19:51:47 -0400
+Processing by UsersController#index as HTML
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.8ms)
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+  Rendered layouts/_rails_default.html.erb (79.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 250ms (Views: 229.5ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/34" for 127.0.0.1 at 2018-10-21 19:52:21 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"Dnll8FuTnQH/3mleqOgQTjr6i9MjFEZSNrCA084vl3+UhV+MbWLOuFCGGmPIXXVrmA2hwMsRPhhht6oBCBqaBA==", "id"=>"34"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:65
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-33@example.com"], ["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[36mUser Update (25.3ms)[0m  [1m[33mUPDATE "users" SET "ImageUploads" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["ImageUploads", 0], ["updated_at", "2018-10-21 23:52:21.559980"], ["id", 34]]
+  ↳ app/controllers/users_controller.rb:67
+  [1m[35m (13.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:67
+Redirected to http://localhost:3000/users
+Completed 302 Found in 72ms (ActiveRecord: 39.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:52:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (17.9ms)
+  Rendered users/index.html.erb within layouts/application (45.0ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 267ms (Views: 245.7ms | ActiveRecord: 3.0ms)
+
+
+Started DELETE "/users/9" for 127.0.0.1 at 2018-10-21 19:52:29 -0400
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"txc7lm4vA1+MNldqFLwRQSqRuAojlbwpSmDt9ckqifwt6wHqWN5Q5iNuJFd0CXRkiGaSGcuQxGMdZ8cnDx+Ehw==", "id"=>"9"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:60
+  [1m[36mUser Destroy (25.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/users_controller.rb:60
+  [1m[35m (19.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:60
+Redirected to http://localhost:3000/users
+Completed 302 Found in 60ms (ActiveRecord: 44.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:52:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (9.0ms)
+  Rendered users/index.html.erb within layouts/application (35.9ms)
+  Rendered layouts/_rails_default.html.erb (76.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 253ms (Views: 230.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 19:52:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22
+Completed 404 Not Found in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:22:in `show'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:52:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.3ms)
+  Rendered users/index.html.erb within layouts/application (392.0ms)
+  Rendered layouts/_rails_default.html.erb (92.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 1288ms (Views: 940.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:58:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "ImageUploads DESC name ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/controllers/users_controller.rb:9)
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (27.7ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "name": syntax error: SELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?):
+     5:   <%= will_paginate %>
+     6: </div>
+     7: <ul class="users">
+     8:   <%= render @users %>
+     9: </ul>
+    10: <div class="userPageBar">
+    11:   <%= will_paginate %>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_122656360'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:58:32 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "ImageUploads DESC name ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/controllers/users_controller.rb:9)
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (24.3ms)
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "name": syntax error: SELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?):
+     5:   <%= will_paginate %>
+     6: </div>
+     7: <ul class="users">
+     8:   <%= render @users %>
+     9: </ul>
+    10: <div class="userPageBar">
+    11:   <%= will_paginate %>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_117904580'
+Started GET "/" for 127.0.0.1 at 2018-10-21 19:58:43 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendered static_pages/home.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_rails_default.html.erb (89.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 243ms (Views: 216.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:58:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "ImageUploads DESC name ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/controllers/users_controller.rb:9)
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (22.9ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "name": syntax error: SELECT  "users".* FROM "users" ORDER BY ImageUploads DESC name ASC LIMIT ? OFFSET ?):
+     5:   <%= will_paginate %>
+     6: </div>
+     7: <ul class="users">
+     8:   <%= render @users %>
+     9: </ul>
+    10: <div class="userPageBar">
+    11:   <%= will_paginate %>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_133405080'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:59:14 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+DEPRECATION WARNING: Dangerous query method (method whose arguments are used as raw SQL) called with non-attribute argument(s): "ImageUploads DESC Name ASC". Non-attribute arguments will be disallowed in Rails 6.0. This method should not be called with user-provided values, such as request parameters or model attributes. Known-safe values can be passed by wrapping them in Arel.sql(). (called from index at C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/controllers/users_controller.rb:9)
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC Name ASC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 105ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: near "Name": syntax error: SELECT  "users".* FROM "users" ORDER BY ImageUploads DESC Name ASC LIMIT ? OFFSET ?):
+     5:   <%= will_paginate %>
+     6: </div>
+     7: <ul class="users">
+     8:   <%= render @users %>
+     9: </ul>
+    10: <div class="userPageBar">
+    11:   <%= will_paginate %>
+  
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_109838200'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:59:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (14.0ms)
+  Rendered users/index.html.erb within layouts/application (42.9ms)
+  Rendered layouts/_rails_default.html.erb (82.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 287ms (Views: 251.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 19:59:42 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:13:in `show'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 19:59:51 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+  Rendered layouts/_rails_default.html.erb (97.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 284ms (Views: 257.4ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:00:39 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.9ms)
+  Rendered users/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_rails_default.html.erb (89.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 271ms (Views: 247.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/112" for 127.0.0.1 at 2018-10-21 20:00:45 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"RhiwgleQt67Lf2SUs21FiQ2uaSaHyKU22m+tY2O/9ITc5Ir+YWHkF2QnF6nT2CCsr1lDNW/N3XyNaIexpYr5/w==", "id"=>"112"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 112], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:58
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-111@example.com"], ["id", 112], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:58
+  [1m[36mUser Update (1.0ms)[0m  [1m[33mUPDATE "users" SET "ImageUploads" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["ImageUploads", 0], ["updated_at", "2018-10-22 00:00:46.045182"], ["id", 112]]
+  ↳ app/controllers/users_controller.rb:58
+  [1m[35m (17.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:58
+Redirected to http://localhost:3000/users
+Completed 302 Found in 35ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:00:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_rails_default.html.erb (82.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 260ms (Views: 238.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:01:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (79.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 270ms (Views: 239.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:01:04 -0400
+Processing by UsersController#promote as HTML
+  Parameters: {"authenticity_token"=>"4eAwofQQocI2V3XVSxCWigoxjXaK3yAhWVSS90O7y7d7HArdwuHye5kPBugrpfOvqManZWLaWGsOU7glhY7GzA==", "id"=>"27"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-26@example.com"], ["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mUser Update (24.9ms)[0m  [1m[33mUPDATE "users" SET "admin" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["admin", 1], ["updated_at", "2018-10-22 00:01:04.645811"], ["id", 27]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[35m (14.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+Redirected to http://localhost:3000/users
+Completed 302 Found in 58ms (ActiveRecord: 41.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:01:04 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.7ms)
+  Rendered users/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_rails_default.html.erb (82.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 260ms (Views: 237.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:01:10 -0400
+Processing by UsersController#promote as HTML
+  Parameters: {"authenticity_token"=>"xnMeVxOLx0qHo3n1NA/YOCW/bEhQq+VUAAMHF1qYRB1cjyQrJXqU8yj7CshUur0dh0hGW7iunR5XBC3FnK1JZg==", "id"=>"27"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mUser Exists (1.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-26@example.com"], ["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+Redirected to http://localhost:3000/users
+Completed 302 Found in 13ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:01:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.0ms)
+  Rendered users/index.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_rails_default.html.erb (88.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 266ms (Views: 243.2ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:01:20 -0400
+Processing by UsersController#promote as HTML
+  Parameters: {"authenticity_token"=>"j2A3yl9+DeUIYLiuCkVRfxEq3/xTmowBxP83j9gBvqoVnA22aY9eXKc4y5Nq8DRas93177uf9EuT+B1dHjSz0Q==", "id"=>"27"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-26@example.com"], ["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+Redirected to http://localhost:3000/users
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:01:21 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.8ms)
+  Rendered users/index.html.erb within layouts/application (38.5ms)
+  Rendered layouts/_rails_default.html.erb (80.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 258ms (Views: 235.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:01:30 -0400
+Processing by UsersController#promote as HTML
+  Parameters: {"authenticity_token"=>"BzDSuovNgy1VG6BkPOFoBdZhXduQMk137yfS+QlwLCydzOjGvTzQlPpD01lcVA0gdJZ3yHg3NT24IPgrz0UhVw==", "id"=>"27"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:64
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-26@example.com"], ["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:66
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:66
+Redirected to http://localhost:3000/users
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:01:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (38.1ms)
+  Rendered layouts/_rails_default.html.erb (80.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 262ms (Views: 237.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:02:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (20.2ms)
+  Rendered users/index.html.erb within layouts/application (48.2ms)
+  Rendered layouts/_rails_default.html.erb (87.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 292ms (Views: 260.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:02:06 -0400
+Processing by UsersController#demote as HTML
+  Parameters: {"authenticity_token"=>"F/XLLeEKVKDktNFQn6vHY45+l5J55+P14x02oW4v4FWNCfFR1/sHGUvsom3/HqJGLIm9gZHim7+0GhxzqBrtLg==", "id"=>"27"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:72
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:74
+  [1m[36mUser Exists (0.0ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER(?) AND "users"."id" != ? LIMIT ?[0m  [["email", "example-26@example.com"], ["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:74
+  [1m[36mUser Update (24.7ms)[0m  [1m[33mUPDATE "users" SET "admin" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["admin", 0], ["updated_at", "2018-10-22 00:02:06.511659"], ["id", 27]]
+  ↳ app/controllers/users_controller.rb:74
+  [1m[35m (16.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:74
+Redirected to http://localhost:3000/users
+Completed 302 Found in 59ms (ActiveRecord: 40.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:02:06 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.1ms)
+  Rendered users/index.html.erb within layouts/application (40.9ms)
+  Rendered layouts/_rails_default.html.erb (78.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 260ms (Views: 237.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:03:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_rails_default.html.erb (100.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 282ms (Views: 259.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:03:50 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_rails_default.html.erb (84.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 263ms (Views: 242.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:04:00 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (13.0ms)
+  Rendered users/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 262ms (Views: 238.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:08:17 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.8ms)
+  Rendered users/index.html.erb within layouts/application (39.7ms)
+  Rendered layouts/_rails_default.html.erb (87.7ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 294ms (Views: 257.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:08:20 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 260ms (Views: 240.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:08:23 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users/27"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/27" for 127.0.0.1 at 2018-10-21 20:08:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (85.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 231ms (Views: 204.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:10:22 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (231.6ms)
+  Rendered users/index.html.erb within layouts/application (257.5ms)
+Completed 500 Internal Server Error in 339ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user' for #<#<Class:0x00000000122a3f98>:0x00000000122a1950>):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user(:promote), method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user(:demote), method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_121520760'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_152388840'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:10:44 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (18.9ms)
+  Rendered users/index.html.erb within layouts/application (46.9ms)
+  Rendered layouts/_rails_default.html.erb (163.7ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 359ms (Views: 335.2ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/promote" for 127.0.0.1 at 2018-10-21 20:10:50 -0400
+Processing by UsersController#reset as HTML
+  Parameters: {"authenticity_token"=>"muQNWHuExXtV0QDB14qfM2zgjXxfNLUZ536d11TVHQUAGDckTXWWwvqJc/y3P/oWzhenb7cxzVOwebcFkuAQfg==", "id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:61
+Completed 404 Not Found in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:61:in `reset'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:11:15 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.4ms)
+  Rendered users/index.html.erb within layouts/application (39.3ms)
+  Rendered layouts/_rails_default.html.erb (100.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 292ms (Views: 269.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:11:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.2ms)
+  Rendered users/index.html.erb within layouts/application (41.5ms)
+  Rendered layouts/_rails_default.html.erb (86.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 266ms (Views: 243.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:12:02 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.3ms)
+  Rendered users/index.html.erb within layouts/application (42.9ms)
+  Rendered layouts/_rails_default.html.erb (93.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 284ms (Views: 260.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/promote" for 127.0.0.1 at 2018-10-21 20:12:06 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"promote"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+Completed 404 Not Found in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find User with 'id'=promote):
+  
+app/controllers/users_controller.rb:13:in `show'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:12:10 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (36.4ms)
+  Rendered layouts/_rails_default.html.erb (83.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 552ms (Views: 261.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:12:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (177.0ms)
+  Rendered users/index.html.erb within layouts/application (202.5ms)
+Completed 500 Internal Server Error in 276ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `user' for #<#<Class:0x00000000122a3f98>:0x0000000010847190>):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user(:promote), data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user(:demote), data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_138372860'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_138559180'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:13:03 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (18.0ms)
+  Rendered users/index.html.erb within layouts/application (43.4ms)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 0..3)):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user, user_path(:promote), data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user, user_path(:demote), data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_138510060'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_121445080'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:13:33 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_rails_default.html.erb (78.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 258ms (Views: 238.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:15:25 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (12.0ms)
+  Rendered users/index.html.erb within layouts/application (38.9ms)
+  Rendered layouts/_rails_default.html.erb (88.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 266ms (Views: 245.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:15:29 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.8ms)
+  Rendered users/index.html.erb within layouts/application (37.7ms)
+  Rendered layouts/_rails_default.html.erb (84.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 263ms (Views: 241.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:15:57 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (110.1ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 297ms (Views: 265.7ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/users/27" for 127.0.0.1 at 2018-10-21 20:16:06 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users/27"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:16:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.8ms)
+  Rendered users/index.html.erb within layouts/application (41.7ms)
+  Rendered layouts/_rails_default.html.erb (86.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 279ms (Views: 246.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-21 20:21:39 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_rails_default.html.erb (84.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendered layouts/_header.html.erb (5.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 227ms (Views: 206.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:22:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.1ms)
+  Rendered users/index.html.erb within layouts/application (42.1ms)
+  Rendered layouts/_rails_default.html.erb (83.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 269ms (Views: 246.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-21 20:22:25 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (321.7ms)
+Completed 500 Internal Server Error in 392ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x000000000aafabb8>:0x000000000c246290>
+Did you mean?  @user):
+     5:       <div class="userContainer">
+     6:         <h1>
+     7:           <%= gravatar_for @user %>
+     8:           <%= @user.name %><% if user.admin? %>&#9733<%end%>
+     9:         </h1>
+    10:         <p>Date joined: <%= @user.created_at.strftime("%B %d, %Y") %><br>
+    11:         Images uploaded: <%= @user.ImageUploads %></p>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__119330467_101857200'
+Started GET "/users/1" for 127.0.0.1 at 2018-10-21 20:22:26 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1919.4ms)
+Completed 500 Internal Server Error in 3324ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<#<Class:0x000000000aafabb8>:0x000000000c1caaa0>
+Did you mean?  @user):
+     5:       <div class="userContainer">
+     6:         <h1>
+     7:           <%= gravatar_for @user %>
+     8:           <%= @user.name %><% if user.admin? %>&#9733<%end%>
+     9:         </h1>
+    10:         <p>Date joined: <%= @user.created_at.strftime("%B %d, %Y") %><br>
+    11:         Images uploaded: <%= @user.ImageUploads %></p>
+  
+app/views/users/show.html.erb:8:in `_app_views_users_show_html_erb__119330467_101604200'
+Started GET "/users/1" for 127.0.0.1 at 2018-10-21 20:22:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (101.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendered layouts/_header.html.erb (4.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 242ms (Views: 223.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:22:46 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.5ms)
+  Rendered users/index.html.erb within layouts/application (37.4ms)
+  Rendered layouts/_rails_default.html.erb (106.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 286ms (Views: 263.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:27:41 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (22.6ms)
+  Rendered users/index.html.erb within layouts/application (52.5ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for #<User:0x000000000ed8a4b0>):
+    4:     <% if current_user.admin?%>
+    5:         <% if !current_user?(user) %>
+    6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+    7:         | <%= link_to "reset", user+"?reset", method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+    8:             <% if !user.admin? %>
+    9:             | <%= link_to "promote", user+"?promote", method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+   10:             <% else %>
+  
+app/views/users/_user.html.erb:7:in `_app_views_users__user_html_erb__936702239_124508300'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_139312180'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:32:35 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (19.9ms)
+  Rendered users/index.html.erb within layouts/application (43.3ms)
+Completed 500 Internal Server Error in 127ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `+' for #<User:0x000000000d651ca8>):
+    4:     <% if current_user.admin?%>
+    5:         <% if !current_user?(user) %>
+    6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+    7:         | <%= link_to "reset", user+"?reset", method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+    8:             <% if !user.admin? %>
+    9:             | <%= link_to "promote", user+"?promote", method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+   10:             <% else %>
+  
+app/views/users/_user.html.erb:7:in `_app_views_users__user_html_erb__936702239_112333540'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_113871840'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:33:09 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+pend=( link_to "reset", user "?reset", method: :reset, data:
+                              ^
+C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:7: syntax error, unexpected ',', expecting ')'
+ink_to "reset", user "?reset", method: :reset, data: { confi
+                              ^):
+  
+app/views/users/_user.html.erb:7: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/_user.html.erb:7: syntax error, unexpected ',', expecting ')'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_90100980'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:33:53 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:9: syntax error, unexpected ','
+nd=( link_to "promote", user+, method: :promote, data: { con
+                              ^):
+  
+app/views/users/_user.html.erb:9: syntax error, unexpected ','
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_157294940'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:38:16 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (26.4ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 3.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:9: syntax error, unexpected ','
+nd=( link_to "promote", user+, method: :promote, data: { con
+                              ^):
+  
+app/views/users/_user.html.erb:9: syntax error, unexpected ','
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_155463040'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:38:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:9: syntax error, unexpected ','
+nd=( link_to "promote", user+, method: :promote, data: { con
+                              ^):
+  
+app/views/users/_user.html.erb:9: syntax error, unexpected ','
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_101737100'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:38:37 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.6ms)
+  Rendered users/index.html.erb within layouts/application (37.9ms)
+  Rendered layouts/_rails_default.html.erb (208.2ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 414ms (Views: 391.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:39:36 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (13.6ms)
+  Rendered users/index.html.erb within layouts/application (38.6ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 264ms (Views: 242.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/%3Ca%20href=%22/users%22%3E" for 127.0.0.1 at 2018-10-21 20:39:44 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/%3Ca%20href=%22/users%22%3E"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:40:03 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (192.7ms)
+  Rendered users/index.html.erb within layouts/application (221.7ms)
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `path_to' for #<#<Class:0x00000000128851f0>:0x000000000dc06a40>
+Did you mean?  path_to_font):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", path_to(user)+"/promote", method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user, method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_115175820'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_115358440'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:40:19 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.0ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (82.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 263ms (Views: 239.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:42:01 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (24.0ms)
+  Rendered users/index.html.erb within layouts/application (51.1ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `link_to' for #<User:0x000000000bd1b8b0>):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user.link_to, method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user, method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_99124220'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_105199340'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:42:11 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (11.7ms)
+  Rendered users/index.html.erb within layouts/application (39.6ms)
+  Rendered layouts/_rails_default.html.erb (90.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 272ms (Views: 249.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:43:45 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (1.0ms)
+  Rendered users/index.html.erb within layouts/application (32.9ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 2.0ms)
+
+
+  
+SyntaxError (C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+nd=( link_to "promote", user "/promote", method: :promote, d
+                              ^
+C:/Users/Brandin/Documents/gitRepos/pngCrypt/app_service/app/views/users/_user.html.erb:9: syntax error, unexpected ',', expecting ')'
+to "promote", user "/promote", method: :promote, data: { con
+                              ^):
+  
+app/views/users/_user.html.erb:9: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/users/_user.html.erb:9: syntax error, unexpected ',', expecting ')'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_122486660'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:44:05 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (19.0ms)
+  Rendered users/index.html.erb within layouts/application (49.3ms)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 3.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user_path+"/promote", method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user, method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_125292020'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_127979680'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:44:30 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (17.0ms)
+  Rendered users/index.html.erb within layouts/application (41.7ms)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"users"}, missing required keys: [:id]):
+     6:         | <%= link_to "delete", user, method: :delete, data: { confirm: "Are you sure you want to DELETE this user?" } %>
+     7:         | <%= link_to "reset", user, method: :reset, data: { confirm: "Are you sure you want to RESET this user?" } %>
+     8:             <% if !user.admin? %>
+     9:             | <%= link_to "promote", user_path+"/:id/promote", method: :promote, data: { confirm: "Are you sure you want to PROMOTE this user to ADMIN? They will have special access to the site!" } %>
+    10:             <% else %>
+    11:             | <%= link_to "demote", user, method: :demote, data: { confirm: "Are you sure you want to DEMOTE this user from ADMIN? The will no longer have special access to the site!" } %>
+    12:             <% end %>
+  
+app/views/users/_user.html.erb:9:in `_app_views_users__user_html_erb__936702239_89701440'
+app/views/users/index.html.erb:8:in `_app_views_users_index_html_erb__100383966_104701200'
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:44:54 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (10.9ms)
+  Rendered users/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_rails_default.html.erb (84.8ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 261ms (Views: 240.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2018-10-21 20:45:28 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendering users/index.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY ImageUploads DESC LIMIT ? OFFSET ?[0m  [["LIMIT", 24], ["OFFSET", 0]]
+  ↳ app/views/users/index.html.erb:8
+  Rendered collection of users/_user.html.erb [24 times] (9.8ms)
+  Rendered users/index.html.erb within layouts/application (43.7ms)
+  Rendered layouts/_rails_default.html.erb (88.8ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 289ms (Views: 256.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2018-10-21 20:45:33 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_rails_default.html.erb (86.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:23
+  Rendered layouts/_header.html.erb (4.7ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 227ms (Views: 206.2ms | ActiveRecord: 1.0ms)
+
+

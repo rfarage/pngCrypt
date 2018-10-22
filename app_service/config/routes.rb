@@ -10,8 +10,6 @@ Rails.application.routes.draw do
   post    '/login',     to: 'sessions#create'
   delete  '/logout',    to: 'sessions#destroy'
   post    'users/:id',   to: 'users#reset'
-  post    'users/:id',   to: 'users#demote'
-  post    'users/:id',   to: 'users#promote'
   resources :users
 
   # Api

@@ -11,6 +11,11 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    if params[:promote]
+      :promote
+    elsif params[:demote]
+      :demote
+    end
   end
   
   def new
@@ -72,7 +77,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @user.admin = false
     @user.save
-    flash[:success] = @user.name+" is no longer has admin access"
+    flash[:success] = @user.name+" no longer has admin access"
     redirect_to users_url
   end
 

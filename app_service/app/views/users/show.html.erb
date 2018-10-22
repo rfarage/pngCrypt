@@ -5,7 +5,7 @@
       <div class="userContainer">
         <h1>
           <%= gravatar_for @user %>
-          <%= @user.name %>
+          <%= @user.name %><% if @user.admin? %>&#9733<%end%>
         </h1>
         <p>Date joined: <%= @user.created_at.strftime("%B %d, %Y") %><br>
         Images uploaded: <%= @user.ImageUploads %></p>
